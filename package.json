@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "nuxt": "^3.9.1",
+    "vite-plugin-vuetify": "^2.0.1",
     "vue": "^3.4.10",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.10"
   }
 }
