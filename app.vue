@@ -1,11 +1,15 @@
 <template>
   <div>
-    <h1>About</h1>
-    <v-btn>
-      Hello
-    </v-btn>
-    <v-icon>
-      mdi-pen
-    </v-icon>
+    <v-form>
+      <v-text-field
+        :rules="(
+          $validator
+            .createField('email')
+            .required()
+            .email()
+            .getRules()
+        )"
+      />
+    </v-form>
   </div>
 </template>

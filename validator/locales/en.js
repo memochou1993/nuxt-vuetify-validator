@@ -1,0 +1,17 @@
+export default {
+  required: (field) => `The ${field} field is required.`,
+  email: (field) => `The ${field} field must be a valid email address.`,
+  alphaDash: (field) => `The ${field} field must only contain letters, digits and underscores.`,
+  alphaDashDot: (field) => `The ${field} field must only contain letters, digits, underscores and dots.`,
+  lowercaseNumUnderscore: (field) => `The ${field} field must only contain lowercase letters, digits and underscores.`,
+  uppercaseNumUnderscore: (field) => `The ${field} field must only contain uppercase letters, digits and underscores.`,
+  min: (field, value) => `The ${field} field must be at least ${value}.`,
+  max: (field, value) => `The ${field} field must not be greater than ${value}.`,
+  minLength: (field, length) => `The ${field} field must be at least ${length} characters.`,
+  maxLength: (field, length) => `The ${field} field must not be greater than ${length} characters.`,
+  minFileSize: (field, value) => `The ${field} field must be at least ${value} megabytes.`,
+  maxFileSize: (field, value) => `The ${field} field must not be greater than ${value} megabytes.`,
+  url: (field) => `The ${field} field must be a valid URL.`,
+  unique: (field) => `The ${field} has already been taken.`,
+  json: (field) => `The ${field} field must be a valid JSON string.`,
+};
