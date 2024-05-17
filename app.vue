@@ -3,8 +3,7 @@
     <v-form>
       <v-text-field
         :rules="(
-          $validator
-            .createField('email')
+          $validate('email')
             .required()
             .email()
             .getRules()

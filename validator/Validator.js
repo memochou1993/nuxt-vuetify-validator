@@ -20,6 +20,4 @@ class Validator {
   }
 }
 
-const validator = new Validator();
-
-export default validator;
+export default Validator;
